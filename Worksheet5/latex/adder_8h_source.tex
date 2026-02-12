@@ -1,0 +1,26 @@
+\doxysection{adder.\+h}
+\hypertarget{adder_8h_source}{}\label{adder_8h_source}\doxymbox{\hyperlink{adder_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//begin\ adder.h}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#ifndef\ MATHSLIB\_ADDER\_H}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\ \ \ \ \#define\ MATHSLIB\_ADDER\_H}}
+\DoxyCodeLine{00014\ \textcolor{preprocessor}{\ \ \ \ \#if\ defined(WIN32)|defined(\_WIN32)}}
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#ifdef\ maths\_STATIC}}
+\DoxyCodeLine{00016\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \#define\ MATHSLIB\_API}}
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#else}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \#ifdef\ maths\_EXPORTS}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#define\ MATHSLIB\_API\ \_\_declspec(dllexport)}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \#else}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \#define\ MATHSLIB\_API\ \_\_declspec(dllimport)}}
+\DoxyCodeLine{00022\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \ \ \ \ \#endif}}
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#endif}}
+\DoxyCodeLine{00024\ \textcolor{preprocessor}{\ \ \ \ \#else}}
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\ \ \ \ \ \ \ \ \#define\ MATHSLIB\_API}}
+\DoxyCodeLine{00026\ \textcolor{preprocessor}{\ \ \ \ \#endif}}
+\DoxyCodeLine{00027\ \ \ \ \ \doxymbox{\hyperlink{adder_8h_aa38314bd0ce0b811a90ae03e462c34f5}{MATHSLIB\_API}}\ \textcolor{keywordtype}{int}\ add(\textcolor{keywordtype}{int}\ a,\ \textcolor{keywordtype}{int}\ b);}
+\DoxyCodeLine{00028\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00029\ \textcolor{comment}{//end\ adder.h}}
+\DoxyCodeLine{00030\ \ \ \ \ }
+
+\end{DoxyCode}

@@ -68,6 +68,9 @@ vcpkg_installed/
 Testing/
 .cache/
 
+#SPECIFIC
+FileContentIndex/
+
 # Created by https://www.toptal.com/developers/gitignore/api/cmake,visualstudio
 # Edit at https://www.toptal.com/developers/gitignore?templates=cmake,visualstudio
 
@@ -487,8 +490,6 @@ FodyWeavers.xsd
 
 # JetBrains Rider
 *.sln.iml
-
-*vsidx
 
 ### VisualStudio Patch ###
 # Additional files built by Visual Studio

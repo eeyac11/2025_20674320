@@ -4,7 +4,7 @@
 #include "adder.h"
 
 int main(int argc, char *argv[]){
-	int a,b,c;
+	int a,b,d;
 	if(argc != 3) return 1;
 	std::string sa(argv[1]);
 	std::string sb(argv[2]);
@@ -12,8 +12,8 @@ int main(int argc, char *argv[]){
 	std::stringstream ssb(sb);
 	ssa >> a;
 	ssb >> b;
-	c = add(a,b);
-	std::cout<<c;
+	d = add(a,b);
+	std::cout<<d;
 	return 0;
 }
 //end calc.cpp

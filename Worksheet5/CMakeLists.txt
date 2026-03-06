@@ -1,5 +1,13 @@
+cmake_minimum_required(VERSION 3.12 FATAL_ERROR)
+project(calc)
+
+if( NOT BUILD_SHARED_LIBS)
+add_definitions(-Dmaths_STATIC)
+endif()
+
+
 if(WIN32)
-	set(CPACK_GENERATOR "NSIS)
+	set(CPACK_GENERATOR "NSIS")
 else()
 	set(CPACK_GENERATOR "ZIP")
 endif()
